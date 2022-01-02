@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  env_gradle7-3-3_jdk17:
+    container_name: env_gradle7-3-3_jdk17 # <containerName>
+    build: .
+    image: env_gradle7-3-3_jdk17
+    hostname: env_gradle7-3-3_jdk17
+    volumes:
+      - ./workspace:/workspace
