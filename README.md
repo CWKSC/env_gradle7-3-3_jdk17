@@ -12,9 +12,15 @@ go.cmd
 
 It will call `docker compose up -d` and `docker exec -it env_gradle7-3-3_jdk17 /bin/bash`
 
+### Extend
+
 Container name must be unique
 
-You can manually change `container_name`, `hostname`, service name in `docker-compose.yml`
+Manually change `container_name`, `hostname`, service name in `docker-compose.yml`
+
+and change container name in `bash.cmd`
+
+### Information
 
 ```
 root@env_gradle7-3-3_jdk17:/workspace# gradle --version
